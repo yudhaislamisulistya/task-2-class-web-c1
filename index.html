@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 : CSS dan Javascript </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto mt-5">
+                <div class="card text-left">
+                    <div class="card-header bg-info">
+                        <h1 class="text-white">Form Penilaian</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label>Nama</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Anda"
+                                    required autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label>Stambuk</label>
+                                <input type="text" class="form-control" id="stambuk" placeholder="Masukkan Stambuk Anda"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label>Kelas</label>
+                                <input type="text" class="form-control" id="kelas" placeholder="Masukkan Kelas Anda"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nilai Tugas</label>
+                                <input type="number" class="form-control" id="nilai_tugas"
+                                    placeholder="Masukkan Nilai Tugas" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nilai MID</label>
+                                <input type="number" class="form-control" id="nilai_mid" placeholder="Masukkan Nilai MID"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nilai Final</label>
+                                <input type="number" class="form-control" id="nilai_final"
+                                    placeholder="Masukkan Nilai Final" required>
+                            </div>
+                            <div class="text-right">
+                                <button onclick="submitProses()" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-outline-primary" onclick="resetProses()">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 mx-auto mt-2" id="hasil_penilaian">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
